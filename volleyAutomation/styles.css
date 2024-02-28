@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap');
+
+html {
+    --primary: #1d3b66;
+    --secondary: #00d8b9;
+    --primary-shadow: #1d3b6680;
+    --secondary-shadow: #00d8b980;
+    --black: #292929;
+    --white: #FFFFFF;
+    --background: #F5F5F5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--black);
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: var(--secondary);
+}
+
+h2 {
+    width: 90%;
+    margin: 24px auto 0;
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 0;
+}
+
+nav > img {
+    height: 20px;
+    margin-top: 6px;
+}
+
+footer {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 6px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+main, nav, footer > div {
+    width: 400px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a > img {
+    width: 250px;
+}
+
+a.apple {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 13px;
+    width: 200px;
+    /* height: 83px; */
+}
+
+a.apple > img {
+    border-radius: 13px;
+    width: 200px;
+    /* height: 83px; */
+}
+
+section {
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 2px 2px 6px var(--primary-shadow);
+}
+
+svg {
+    width: 100px;
+    color: var(--primary);
+}
+
+.link {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-height: 670px) {
+    footer {
+        position: sticky;
+        padding: 2px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    main, nav, footer > div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 335px) {
+    nav > img {
+        height: 15px;
+    }
+}
+
+@media (max-width: 275px) {
+    body {
+        font-size: 14px;
+    }
+    svg {
+        width: 50px;
+    }
+    nav > img {
+        height: 12px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --primary: #1d3b66;
+        --secondary: #00d8b9;
+        --black: #F5F5F5;
+        --white: #393939;
+        --background: #222222;
+    }
+    body {
+        background-color: var(--background);
+    }
+    h2, h3 {
+        color: var(--black);
+    }
+    section {
+        border: 2px solid var(--secondary);
+        box-shadow: 2px 2px 6px var(--secondary-shadow);
+    }
+    svg {
+        color: var(--secondary);
+    }
+}

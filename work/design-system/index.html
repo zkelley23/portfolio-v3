@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zach Kelley's portfolio, Vasion Design System project page. User experience/user interface design and graphic design.">
+    <title>ZK Design | Vasion Design System</title>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/core-styles.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/meda-queries.css">
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <a href="../"><img src="../../images/zk-icon.svg" alt="Z K logotype" /></a>
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+            <div id="darken" onclick="closeNav()"></div>
+            <ul>
+                <li>
+                    <a href="../../">Home</a>
+                </li>
+                <li>
+                    <a href="../" class="active">Work</a>
+                </li>
+                <li>
+                    <a href="../../about/">About</a>
+                </li>
+                <li>
+                    <a href="../../contact/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- ---------- TITLE AND OVERVIEW ---------- -->
+        <section class="page-head sky">
+            <article>
+                <a href="../" class="link back-link">&#8592;Work
+                    <div class="link-underline"></div>
+                </a>
+                <h1>Vasion Design System</h1>
+                <h2>Overview</h2>
+                <p>What ultimately ended up as the Vasion Design System started as a branding project. The UX team was working on a product in the early-development stage when my manager asked me to brainstorm ways to improve the branding in the product. At the time, the product was very stark and bland. It also lacked character and branding. I started thinking of ways to pull more of our brand logos and colors into the interface.</p>
+                <p>While this was going on, it also became clear that we, as a UX team, needed a better design system. We had been using one that was only partially complete, which didn&#39;t fit our needs. One of my teammates and I did some research to find out the best way forward.</p>
+            </article>
+        </section>
+
+        <!-- ---------- RESEARCH ---------- -->
+        <section class="normal-background">
+            <article>
+                <h2>Research</h2>
+                <p>We researched design system creation and maintenance and noted best practices. We studied popular design systems to better understand what we wanted to implement at Vasion. My teammate suggested using the Material Design 3 component library since it was available on Figma. We started poking around the Figma file provided by Material Design, and we determined that it would be perfect for the team.</p>
+            </article>
+        </section>
+
+        <!-- ---------- PROCESS ---------- -->
+        <section class="normal-background gray">
+            <article>
+                <h2>Process</h2>
+                <p>The component library provided by Material Design was perfect because it had everything we needed prebuilt. However, the design language had to be updated to match our vision and product. I updated things like border radiuses, font cases, and drop shadows. I worked with my teammate to update the colors to match our needs while maintaining Material Design&#39;s color theory. I also added several custom components to help speed up the design process for the team. As things went along, the Vasion Design System started coming together.</p>
+                <img src="../../images/design-system/colors.svg" alt="System color palette for the Vasion Design system" class="desktop desktop-lg" />
+                <p>As a team, we met to discuss the system&#39;s progress and ensure alignment on component usage and design language. Even now that the design system is finished, we continue to hold weekly design language meetings to talk about components and their usage across our current designs.</p>
+                <p>These are just a few examples of the standard and custom components used in the design system:</p>
+                <h3>Standard Components</h3>
+                <img src="../../images/design-system/buttons.svg" alt="All button types and variants used in the Vasion Design system" class="desktop desktop-lg" />
+                <img src="../../images/design-system/cards.svg" alt="All card types and variants used in the Vasion Design system" class="desktop desktop-lg" />
+                <h3>Custom Components</h3>
+                <img src="../../images/design-system/switch-cards.svg" alt="Custom switch card types and variants used in the Vasion Design system" class="desktop desktop-lg" />
+                <img src="../../images/design-system/tab-steps.svg" alt="All tap and step types and variants used in the Vasion Design system" class="desktop desktop-md" />
+                <img src="../../images/design-system/top-bars.svg" alt="All top bar types, variants, and sizes used in the Vasion Design system" class="desktop desktop-lg" />
+            </article>
+        </section>
+
+        <!-- ---------- RESULTS/LESSONS LEARNED ---------- -->
+        <section class="normal-background">
+            <article>
+                <h2>Lessons Learned</h2>
+                <p>It was an amazing experience working on this project. I learned so much about design systems. I learned how to build, update, and maintain a robust design system. I also found ways to improve how components and their variants are built to speed up the design process for the designers. I also learned the importance of ongoing collaboration for our design language. Thanks to the Vasion Design System, UX team is now functioning more efficiently and cohesively.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <article>
+            <div>
+                <h3>Zach Kelley</h3>
+            </div>
+            <a href="../../contact/" class="link">Contact me
+                <div class="link-underline"></div>
+            </a>
+            <img src="../../images/zk-icon-white.svg" alt="Z K logotype" />
+        </article>
+    </footer>
+    <div id="sideNav" class="sideNav">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <a href="../../">Home</a>
+        <a href="../../work/" class="active">Work</a>
+        <a href="../../about/">About</a>
+        <a href="../../contact/">Contact</a>
+    </div>
+    <script src="../../script/script.js"></script>
+</body>
+
+</html>
